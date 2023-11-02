@@ -8,11 +8,11 @@ import DeleteTasks from './DeleteTasks';
 
 //Corregi sintaxis, class por className, for por htmlFor
 //Agregue un boton para añadir tareas a la lista y a la API
-//Condicione el boton de Delete para que se renderice solo cuando hay la menos una tarea añadida
-//Respectivas aplicaciones en CSS
+//Condicione el boton de Delete para que se renderice solo cuando hay al menos una tarea añadida
 //Ademas de tener un boton "DELETE ALL TASKS AND USERNAME" se agrega boton que elimina tareas "CLEAN ALL TASKS" sin borrar el username
 //Nuevo componente DeleteTasks
 //Al presionar icono de borrar cada tarea por si sola, se elimina de la todo list visual, no en la API, por razones externas de la API.
+//Respectivas aplicaciones en CSS
 
 
 
