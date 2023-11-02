@@ -37,7 +37,7 @@ const InputName = ({ setUserName, setShowCardTasks, postData }) => {
             </div>
             <div className="username-container">
                 <div className="labelName">
-                    <label for="InputUserName" className='title input-username'>Enter your Username:</label>
+                    <label htmlFor="InputUserName" className='title input-username'>Enter your Username:</label>
                 </div>
 
                 <div>
@@ -46,7 +46,7 @@ const InputName = ({ setUserName, setShowCardTasks, postData }) => {
                         id='userNameInput'
                         value={value}
                         onChange={handleInputChange}
-                        class='inputName'
+                        className='inputName'
 
                     />
 

@@ -18,12 +18,7 @@ const DeleteButton = ({ deleteTodo, setTodos, setShowCardTasks, setUserName, set
     return (
         <div>
 
-            <button type="button" className="btn btn-danger" onClick={handleDeleteButton} style={{
-                display: 'block', marginLeft: 'auto', marginRight: 'auto',
-                marginTop: '20px'
-
-            }}>Delete all tasks and username</button>
-
+            <button type="button" className="deleteButton" onClick={handleDeleteButton}><i class="fa-regular fa-circle-xmark"></i> Delete all tasks and username</button>
 
 
         </div>

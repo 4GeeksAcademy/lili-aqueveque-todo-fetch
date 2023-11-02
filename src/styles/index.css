@@ -1,6 +1,6 @@
 body {
     background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M27.26 5.415c-.55 0-.9.55-.65 1l2.45 4.75c.2.5.85.5 1.15.1l3.15-4.5c.3-.4 0-1.05-.55-1.1zM10.689 8.068c-.406-.051-.822.31-.778.748l.5 5.3c.05.5.6.8 1.05.5l4.55-3.05c.45-.3.4-.95-.05-1.15l-5.1-2.3a.605.605 0 0 0-.172-.048zM2.406 24.584a.635.635 0 0 0-.345.081l-4.75 2.4c-.45.2-.5.85-.1 1.15l4.45 3.15c.4.3 1 0 1.1-.5l.3-5.55c0-.412-.31-.712-.655-.73zm40 0a.635.635 0 0 0-.345.081l-4.75 2.4c-.45.2-.5.85-.1 1.15l4.45 3.15c.4.3 1 0 1.1-.5l.3-5.55c0-.412-.31-.712-.655-.73zm-22.17 3.108a.744.744 0 0 0-.675.723l.4 5.55c.05.5.6.8 1.05.5l4.45-2.95c.45-.25.4-.9-.05-1.15l-4.8-2.6a.702.702 0 0 0-.376-.073z'  stroke-width='1' stroke='none' fill='hsla(259, 67%, 83%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
-    background-attachment:fixed;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -8,35 +8,42 @@ h1 {
     font-weight: 300;
     color: #86458b;
 }
+
 .note {
     background-color: rgb(255, 251, 234);
     margin: auto;
     width: 350px;
     border: 1px solid rgb(187, 187, 187);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
-ul{
+
+ul {
     list-style: none;
     width: 100%;
     padding: 0;
 }
+
 li {
     padding: 8px;
     background-color: rgb(255, 251, 234);
     box-sizing: border-box;
 }
+
 li:not(:last-child) {
     border-bottom: 1px solid #727272;
 }
+
 .inputy {
     background-color: rgb(255, 251, 234);
     border: none;
-    transition: border 0.3s; /* Add transition for smooth effect */
+    transition: border 0.3s;
 }
+
 .inputy:focus {
     border: none;
 }
+
 .trash {
     float: right;
     color: grey;
@@ -44,6 +51,7 @@ li:not(:last-child) {
     background-color: rgb(255, 251, 234);
     display: none;
 }
+
 li:hover .trash {
     display: inline;
 }
@@ -58,6 +66,10 @@ li:hover .trash {
     margin-top: 5px;
     color: white;
     font-weight: 400;
+}
+
+.purple-button:hover {
+    background-color: #b35eb9;
 }
 
 .input-username {
@@ -81,5 +93,88 @@ li:hover .trash {
     margin-top: 200px;
     font-size: 50px;
     margin-bottom: 20px;
-    color:#86458b;
+    color: #86458b;
+}
+
+.addTaskButton {
+    float: right;
+    align-items: center;
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 10px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 8px 14px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.addTaskButton:hover {
+    background-color: #d43673;
+}
+
+
+.deleteButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    align-items: center;
+    background-color: #ea4c4c;
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 10px;
+    list-style: none;
+    outline: none;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.deleteTasksButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    align-items: center;
+    background-color: #ea6c4c;
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 10px;
+    list-style: none;
+    outline: none;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
